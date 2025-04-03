@@ -1,0 +1,46 @@
+/usuarios/login
+{
+  "email": String,
+  "senha": String
+}
+{
+  "isError": false,
+  "idUsuario": ?
+}
+
+/usuarios
+{
+  "nome": "João",
+  "email": "joao@example.com",
+  "senha": "minhasenha"
+  "corFoto": "808080",
+}
+{
+  "isError": false,
+  "message": "O usuario (ID: ?) foi criado."
+}
+
+/posts
+{
+  "email": "joao@example.com",
+  "senha": "minhasenha"
+  "titulo": "Título do Post",
+  "texto": "Texto do Post"
+}
+{
+  "isError": false,
+  "message": "O post (ID: ?) foi criado."
+}
+
+/comentarios
+{
+  "email": "joao@example.com",
+  "senha": "minhasenha"
+  "titulo": "Titulo do Comentário",
+  "texto": "Texto do Comentario",
+  "idPost": 11
+}
+{
+  "isError": false,
+  "message": "O comentario (ID: ?) foi criado."
+}

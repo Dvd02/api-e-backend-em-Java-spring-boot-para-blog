@@ -1,0 +1,41 @@
+
+PUT
+/usuarios
+{
+  "emailAntigo": "joao@example.com",
+  "senhaAntiga": "minhasenha",
+  "emailNovo": "joao@example.com",
+  "senhaNova": "minhasenha",
+  "nomeNovo": "João Editado",
+  "corFoto": "000000"
+}
+{
+  "isError": false,
+  "message": "O usuario (ID: 11) foi editado"
+}
+
+/posts
+{
+  "email": "joao@example.com",
+  "senha": "minhasenha",
+  "titulo": "Título do Post editado",
+  "texto": "Texto do Post editado",
+  "id": 11
+}
+{
+  "isError": false,
+  "message": "O post (ID: 11) foi editado."
+}
+
+/comentarios
+{
+  "email": "joao@example.com",
+  "senha": "minhasenha",
+  "titulo": "Título do Comentario editado",
+  "texto": "Texto do Comentario editado",
+  "id": 11
+}
+{
+  "isError": false,
+  "message": "O comentario (ID: 11) foi editado."
+}

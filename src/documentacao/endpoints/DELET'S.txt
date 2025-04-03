@@ -1,0 +1,31 @@
+/usuarios
+{
+  "email": String,
+  "senha": String
+}
+{
+  "isError": false,
+  "message": "O usuario (ID: 11) foi deletado"
+}
+
+/posts
+{
+  "email": "joao@example.com",
+  "senha": "minhasenha",
+  "id": 11
+}
+{
+  "isError": false,
+  "message": "O post (ID: 11) foi deletado."
+}
+
+/comentarios
+{
+  "email": "joao@example.com",
+  "senha": "minhasenha",
+  "id": 11
+}
+{
+  "isError": false,
+  "message": "O comentario (ID: 11) foi deletado."
+}
