@@ -4,25 +4,29 @@
 
 Este projeto é uma API RESTful para um sistema de blog com funcionalidades de usuários, posts e comentários. A estrutura do projeto  segue o padrão MVC (Model-View-Controller) com algumas adaptações para APIs REST. A API utiliza Spring Boot e oferece endpoints para CRUD (Create, Read, Update, Delete) de todas as entidades, além de recursos de paginação, autenticação e relacionamentos entre entidades.
 
+### Uso da API e endpoints
+
+Leia a documentação completa aqui:  
+- [Sobre Endpoints](sobre_endpoints.md) 
+
 ### Estrutura do Projeto
 
 ```
-src/
-├── main/
-│   ├── java/com/blog/
-│   │   ├── config/          # Configurações do projeto
-│   │   ├── controller/      # Controladores REST
-│   │   ├── exception/       # Tratamento de exceções
-│   │   ├── mapper/          # Objetos de Transferência de Dados
-│   │   ├── model/           # Entidades do banco de dados
-│   │   ├── repository/      # Interfaces de acesso a dados
-│   │   ├── service/         # Lógica de negócio
-│   │   ├── requests/        # Clases para entrada de dados
-│   │   ├── response/        # Classes para saidas de dados
-│   │   └── util/            # Utilitários
-│   └── resources/
-│       └── application.properties   # Configurações da aplicação
-└── documentacao
+src/main/
+   ├── java/com/blog/
+   │   ├── config/          # Configurações do projeto
+   │   ├── controller/      # Controladores REST
+   │   ├── exception/       # Tratamento de exceções
+   │   ├── mapper/          # Objetos de Transferência de Dados
+   │   ├── model/           # Entidades do banco de dados
+   │   ├── repository/      # Interfaces de acesso a dados
+   │   ├── service/         # Lógica de negócio
+   │   ├── requests/        # Clases para entrada de dados
+   │   ├── response/        # Classes para saidas de dados
+   │   └── util/            # Utilitários
+   └── resources/
+       ├── script.sql       # Sql para criar o banco de dados
+       └── application.properties   # Configurações da aplicação
 ```
 
 ## Descrição das Principais Classes
@@ -139,6 +143,7 @@ Usuario (1) ↔ (N) Post (1) ↔ (N) Comentario (N) ↔ (1) Usuario
 
 1. Clone o repositório
 2. Configure o arquivo `application.properties`
+3. Configure o banco de dados [esquema do projeto](src/main/resources/script.sql) 
 3. Execute a classe principal (`Application.java`)
 4. Acesse a API em `http://localhost:8080`
 

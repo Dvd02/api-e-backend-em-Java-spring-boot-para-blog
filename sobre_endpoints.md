@@ -1,7 +1,8 @@
 # Documentação Completa dos Endpoints do Projeto Blog
 
-## Visão Geral
-Este projeto é uma API RESTful para um sistema de blog com funcionalidades de usuários, posts e comentários. A API utiliza Spring Boot e oferece endpoints para CRUD (Create, Read, Update, Delete) de todas as entidades, além de recursos de paginação, autenticação e relacionamentos entre entidades.
+## Sobre o Projeto
+
+Este projeto é uma API RESTful para um sistema de blog com funcionalidades de usuários, posts e comentários. A estrutura do projeto  segue o padrão MVC (Model-View-Controller) com algumas adaptações para APIs REST. A API utiliza Spring Boot e oferece endpoints para CRUD (Create, Read, Update, Delete) de todas as entidades, além de recursos de paginação, autenticação e relacionamentos entre entidades.
 
 ## Autenticação
 Todos os endpoints que modificam dados (POST, PUT, DELETE) requerem autenticação através de email e senha no corpo da requisição.
