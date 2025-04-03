@@ -136,8 +136,6 @@ Usuario (1) ↔ (N) Post (1) ↔ (N) Comentario (N) ↔ (1) Usuario
 - Spring Boot Starter Web (REST API)
 - Spring Boot Starter Data JPA (Banco de dados)
 - Spring Boot Starter Validation (Validação)
-- H2 Database (Banco em memória - desenvolvimento)
-- Lombok (Redução de boilerplate code)
 
 ## Como Executar
 
